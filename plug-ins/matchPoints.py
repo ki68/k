@@ -50,10 +50,10 @@ class matchPoints(OpenMayaMPx.MPxCommand):
         return True
 
     def redoIt(self):
-        self.targetFnMesh.setPoints(self.targetPoints) # to target
+        self.sourceFnMesh.setPoints(self.targetPoints) # to target
 
     def undoIt(self):
-        self.targetFnMesh.setPoints(self.sourcePoints) # to source    
+        self.sourceFnMesh.setPoints(self.sourcePoints) # to source    
 
     def doIt(self, argList):
     
@@ -67,6 +67,8 @@ class matchPoints(OpenMayaMPx.MPxCommand):
 
         # set points to source
         self.sourceFnMesh.setPoints(self.targetPoints)
+        
+        print ('Compelte.')
 
 
 def creator():

@@ -2,7 +2,7 @@
 ''' 
 custom maya cmd :
 Vertex matching between two mesh objects
-
+------------------------------------
 
 https://github.com/minoue
 https://ex3_transfervertexposition.py/

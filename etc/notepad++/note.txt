@@ -1,0 +1,23 @@
+Notepad++ v8.4.2 windows10
+
+------- Put files in the next path  ---------
+
+userDefineLang.xml
+C:\Users\xxx\AppData\Roaming\Notepad++\userDefineLangs
+
+mel.xml
+C:\Program Files\Notepad++\functionList
+
+
+----------- Comment role in mel code ---------------
+
+
+tokenize $value "\"" $buffer; 
+-------> 
+tokenize $value "\"" $buffer; // "
+
+
+if (`gmatch $path "*/folder1/*"`)
+-------> 
+// /*
+if (`gmatch $path "*/folder1/*"`) // */

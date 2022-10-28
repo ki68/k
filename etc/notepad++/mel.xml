@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- ==========================================================================\
+|
+|   To learn how to make your own language parser, please check the following
+|   link:
+|       https://npp-user-manual.org/docs/function-list/
+|
+\=========================================================================== -->
+<NotepadPlus>
+	<functionList>
+		<!-- ====================================================== [ Mel ] -->
+
+		<parser
+			displayName="Mel"
+			id         ="mel_syntax"
+			commentExpr="(?s:/\*.*?\*/)|(?m-s://.*?$)"
+		>
+			<function
+				mainExpr="(^global\x20proc\x20vector\[\]\x20\K([\w]+)(?=(\s+)?\())|(^global\x20proc\x20vector\x20\K([\w]+)(?=(\s+)?\())|(^global\x20proc\x20int\[\]\x20\K([\w]+)(?=(\s+)?\())|(^global\x20proc\x20int\x20\K([\w]+)(?=(\s+)?\())|(^global\x20proc\x20float\[\]\x20\K([\w]+)(?=(\s+)?\())|(^global\x20proc\x20float\x20\K([\w]+)(?=(\s+)?\())|(^global\x20proc\x20string\[\]\x20\K([\w]+)(?=(\s+)?\())|(^global\x20proc\x20string\x20\K([\w]+)(?=(\s+)?\())|(^global\x20proc\x20\K([\w]+)(?=(\s+)?\())"
+			>
+				<functionName>
+					<nameExpr expr=".*" />
+				</functionName>
+			</function>
+		</parser>
+	</functionList>
+</NotepadPlus>

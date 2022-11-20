@@ -1,0 +1,454 @@
+//Maya Preference 2022 (Release 1)
+//
+//
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category "User"
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "mel"
+	-command ("\r\n\r\n\r\n$currentPanel = `getPanel -withFocus`; \r\n                string $panelType = `getPanel -to $currentPanel`; if ($panelType == \"modelPanel\") { \r\n                modelEditor -e -xray ( !`modelEditor -q -xray $currentPanel` ) $currentPanel; } \r\n")
+	xray;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category "User"
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "mel"
+	-command ("\r\n$currentPanel = `getPanel -withFocus`; \r\n                string $panelType = `getPanel -to $currentPanel`; if ($panelType == \"modelPanel\") { \r\n                modelEditor -e -nurbsCurves ( !`modelEditor -q -nurbsCurves $currentPanel` ) $currentPanel; } \r\n\r\n")
+	nubscurve;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category "User"
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "mel"
+	-command ("\r\n\r\n$currentPanel = `getPanel -withFocus`; \r\n                string $panelType = `getPanel -to $currentPanel`; if ($panelType == \"modelPanel\") { \r\n                modelEditor -e -wos ( !`modelEditor -q -wos $currentPanel` ) $currentPanel; } ;\r\n\r\n")
+	line;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category "User"
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "mel"
+	-command ("ToggleLocalRotationAxes; // alt + L")
+	showLRA;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category ""
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "mel"
+	-command ("source \"C:/kimstools/library/exScripts/AS_Skinny.mel\";AS_Skinny;")
+	Skinny;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category "User"
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "mel"
+	-command ("string $currentPanel = `getPanel -withFocus`; \r\n\r\nif (`modelEditor -q -dl  $currentPanel`==\"default\"){\r\n\r\nDisplayLight;\r\n\r\n}\r\n\r\nelse {\r\nmodelEditor -e -dl \"default\" $currentPanel;\r\n\r\n\r\n}")
+	ToggleLight;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category "User"
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "mel"
+	-command ("\r\n$currentPanel = `getPanel -withFocus`; \r\n                string $panelType = `getPanel -to $currentPanel`; if ($panelType == \"modelPanel\") { \r\n                modelEditor -e -nurbsSurfaces ( !`modelEditor -q -nurbsSurfaces $currentPanel` ) $currentPanel; } \r\n\r\n")
+	nubsSurase;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category "User"
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "mel"
+	-command ("SetDrivenKeyOptions;")
+	SetDrivenKeyOptio;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category "User"
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "mel"
+	-command ("AddInfluenceOptions;")
+	AddInfluenc;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category "Animate"
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "mel"
+	-command ("string $aa[]=`ls -sl`;\r\nselect -hierarchy;\r\nselect -d -ne $aa[0] ;")
+	selHierarchy;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category ""
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "python"
+	-command ("import webbrowser\nurl = 'http://help.autodesk.com/cloudhelp/2017/ENU/Maya-Tech-Docs/Nodes/index.html'\nchrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'\nwebbrowser.get(chrome_path).open(url)")
+	help_Node;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category "User"
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "mel"
+	-command ("{ string $currentPanel = `getPanel -withFocus`; string $state = `isolateSelect -q -state $currentPanel`; if ($state) enableIsolateSelect $currentPanel false; else enableIsolateSelect $currentPanel true;}")
+	iso_select;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category "User"
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "python"
+	-command ("import maya.cmds as mc \n# ctrl l 선택된 노드 제거, ctrl / 선택된 노드 제외하고 모두 제거 \n# 1,2,3,4 목록 심플,연결가능,풀,모든(커스텀)\n# 5 노드타입,노드이름숨김 토글 \n# shit ,./ 는 인풋아웃풋 연결 보여주기. ui버튼이랑 방식이 좀 다름.\n \ncurrWin = mc.getPanel(withFocus=1)\nsel=mc.ls(sl=1)\nfor e in sel:\n    mc.nodeEditor(currWin+'NodeEditorEd',e=1,an=e) # add")
+	addNodeInNodeEditor;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category "User"
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "mel"
+	-command ("\n$currentPanel = `getPanel -withFocus`; \n                string $panelType = `getPanel -to $currentPanel`; if ($panelType == \"modelPanel\") { \n                modelEditor -e -joints ( !`modelEditor -q -joints $currentPanel` ) $currentPanel; } \n\n")
+	showJoint;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category "User"
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "mel"
+	-command ("// ~ 로 정함.\n\nif (`softSelect -q -softSelectEnabled`==1){softSelect -e -softSelectEnabled 0;}\nelse {softSelect -e -softSelectEnabled 1;}")
+	softToggle;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category "Custom Scripts.User"
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "mel"
+	-command ("OutlinerWindow;\n// Set\nfor ( $outliner in `getPanel -type outlinerPanel` )\n{ outlinerEditor -e -setFilter \"defaultSetFilter\" $outliner; }   \n\n/*\n\nstring $outliners[] = `getPanel -type outlinerPanel`;\nif (!(`size($outliners)` >=4)){\n\n    OutlinerWindow;\n    string $outliners[] = `getPanel -type outlinerPanel`;\n    // Set\n    for ( $outliner in $outliners )\n    { outlinerEditor -e -setFilter \"defaultSetFilter\" $outliner; }        \n \n}\n\n*/\n\n")
+	singleOutlinerAndClean;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category ""
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "python"
+	-command ("import webbrowser\nurl = 'http://help.autodesk.com/cloudhelp/2017/ENU/Maya-Tech-Docs/CommandsPython/index.html'\nchrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'\nwebbrowser.get(chrome_path).open(url)")
+	help_Py;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category ""
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "python"
+	-command ("import webbrowser\nurl = 'http://help.autodesk.com/cloudhelp/2017/ENU/Maya-Tech-Docs/Commands/index.html'\nchrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'\nwebbrowser.get(chrome_path).open(url)")
+	help_Mel;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category "Custom Scripts.User"
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "mel"
+	-command ("\n\n\n$currentPanel = `getPanel -withFocus`; \n                string $panelType = `getPanel -to $currentPanel`; if ($panelType == \"modelPanel\") { \n                modelEditor -e -polymeshes ( !`modelEditor -q -polymeshes $currentPanel` ) $currentPanel; } \n")
+	mesh_toggle;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category "Custom Scripts.User"
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "python"
+	-command ("sel=mc.ls(sl=1)\nif len(sel)==2 and mc.nodeType(sel[0]) == 'decomposeMatrix' and mc.nodeType(sel[1]) == 'transform':\n    mc.connectAttr(sel[0]+'.outputRotate',sel[1]+'.rotate')\n    mc.connectAttr(sel[0]+'.outputTranslate',sel[1]+'.translate')\n    mc.connectAttr(sel[0]+'.outputScale',sel[1]+'.scale')\nelse : mc.warning('one of both is not decomposeMatrix, or is not transform, or not both!!')")
+	Connect_Decomp_Matrix_To_Transform;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category "Custom Scripts.User"
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "mel"
+	-command ("gameFbxExporter;")
+	GameExporter;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category "Custom Scripts.User"
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "python"
+	-command ("mc.createNode(\"decomposeMatrix\")")
+	create_DecompMatrix;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category "Custom Scripts.User"
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "mel"
+	-command ("createNode(\"multMatrix\");")
+	create_multiMatrix;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category "Custom Scripts.User"
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "python"
+	-command ("for e in mc.ls(sl=1):\n    pos=mc.xform(e,q=1,ws=1,a=1,t=1)\n    mc.select(cl=1)\n    mc.joint(p=[-1*pos[0],pos[1],pos[2]])")
+	joint_mirror;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category "Custom Scripts.User"
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "python"
+	-command ("sels=mc.ls(sl=1)\nif 'L_' in sels[0]:\n    mc.rename(sels[1],sels[0].replace('L_','R_'))")
+	mirror_name;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category "Custom Scripts.User"
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "mel"
+	-command ("toiRig_createEmptyGrp;")
+	toi_grp;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category "Custom Scripts.User"
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "python"
+	-command ("# 필드가 담긴 묻기 창을 띄움. \n# 현재 선택된 것들에 grp가 있으면 다른 글자로 바꾸고 상위에 grp 그룹을 씌우겠는지. 아님 취소.\nresult = mc.promptDialog(title='Rename Object',message='Enter Name:',button=['OK', 'Cancel'],defaultButton='OK',cancelButton='Cancel',dismissString='Cancel')\n\nif result == 'OK': \n\ttext = mc.promptDialog(query=True, text=True)\t\n\t\nparents=[]\t\nif result == 'OK': \n    sels=mc.ls(sl=1)\n    \n    for e in sels:        \n        obj=mc.rename(e, e.replace('grp',text))\n        mc.select(obj)\n        mel.eval(\"toiRig_createEmptyGrp;\")\n        pa=mc.listRelatives(mc.ls(sl=1)[0],p=1)[0]\n        parents.append(mc.rename(pa,pa.replace(text+'_grp','grp')))\n        \nmc.select(parents)")
+	grouping_rename;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category "Custom Scripts.User"
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "python"
+	-command ("sels=mc.ls(sl=1)\nfor e in sels:\n    child=mc.listRelatives(e,c=1)[0]\n    mc.rename(e,child+'_grp')")
+	group_with_child_name;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category "Custom Scripts.User"
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "mel"
+	-command ("if (`symmetricModelling -query -symmetry` == 0){  reflectionSetMode objectx; }\nelse {reflectionSetMode none;}")
+	symmetry_x;
+
+runTimeCommand
+	-label ""
+	-annotation ""
+	-longAnnotation ""
+	-category "Custom Scripts.User"
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-helpUrl ""
+	-hotkeyCtx ""
+	-commandLanguage "mel"
+	-command ("$currentPanel = `getPanel -withFocus`; \n                string $panelType = `getPanel -to $currentPanel`; if ($panelType == \"modelPanel\") { \n                modelEditor -e -displayTextures ( !`modelEditor -q -displayTextures $currentPanel` ) $currentPanel; } ;\n\n")
+	toggle_tex;
+

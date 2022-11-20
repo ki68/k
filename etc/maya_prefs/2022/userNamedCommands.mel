@@ -1,0 +1,424 @@
+//Maya Preference 2022 (Release 1)
+//
+//
+
+nameCommand
+	-annotation "Pop Hotbox"
+	-sourceType "mel"
+	-command ("hotBox")
+	NameComPop_hotBox;
+
+nameCommand
+	-annotation "HotkeyPreferencesWindowNameCommand"
+	-sourceType "mel"
+	-command ("HotkeyPreferencesWindow")
+	HotkeyPreferencesWindowNameCommand;
+
+nameCommand
+	-annotation "GraphEditorNameCommand"
+	-sourceType "mel"
+	-command ("GraphEditor")
+	GraphEditorNameCommand;
+
+nameCommand
+	-annotation "ExpressionEditorNameCommand"
+	-sourceType "mel"
+	-command ("ExpressionEditor")
+	ExpressionEditorNameCommand;
+
+nameCommand
+	-annotation "ScriptEditorNameCommand"
+	-sourceType "mel"
+	-command ("ScriptEditor")
+	ScriptEditorNameCommand;
+
+nameCommand
+	-annotation "ComponentEditorNameCommand"
+	-sourceType "mel"
+	-command ("ComponentEditor")
+	ComponentEditorNameCommand;
+
+nameCommand
+	-annotation "ConnectionEditorNameCommand"
+	-sourceType "mel"
+	-command ("ConnectionEditor")
+	ConnectionEditorNameCommand;
+
+nameCommand
+	-annotation "OutlinerWindowNameCommand"
+	-sourceType "mel"
+	-command ("OutlinerWindow")
+	OutlinerWindowNameCommand;
+
+nameCommand
+	-annotation "HypergraphWindowNameCommand"
+	-sourceType "mel"
+	-command ("HypergraphWindow")
+	HypergraphWindowNameCommand;
+
+nameCommand
+	-annotation "HypershadeWindowNameCommand"
+	-sourceType "mel"
+	-command ("HypershadeWindow")
+	HypershadeWindowNameCommand;
+
+nameCommand
+	-annotation "JointToolNameCommand"
+	-sourceType "mel"
+	-command ("JointTool")
+	JointToolNameCommand;
+
+nameCommand
+	-annotation "SmoothBindSkinOptionsNameCommand"
+	-sourceType "mel"
+	-command ("SmoothBindSkinOptions")
+	SmoothBindSkinOptionsNameCommand;
+
+nameCommand
+	-annotation "ArtPaintSkinWeightsToolOptionsNameCommand"
+	-sourceType "mel"
+	-command ("ArtPaintSkinWeightsToolOptions")
+	ArtPaintSkinWeightsToolOptionsNameCommand;
+
+nameCommand
+	-annotation "ChannelControlEditorNameCommand"
+	-sourceType "mel"
+	-command ("ChannelControlEditor")
+	ChannelControlEditorNameCommand;
+
+nameCommand
+	-annotation "nubscurveNameCommand"
+	-sourceType "mel"
+	-command ("nubscurve")
+	nubscurveNameCommand;
+
+nameCommand
+	-annotation "xrayNameCommand"
+	-sourceType "mel"
+	-command ("xray")
+	xrayNameCommand;
+
+nameCommand
+	-annotation "polykonNameCommand"
+	-sourceType "mel"
+	-command ("polykon")
+	polykonNameCommand;
+
+nameCommand
+	-annotation "PlaybackToggleNameCommand"
+	-sourceType "mel"
+	-command ("PlaybackToggle")
+	PlaybackToggleNameCommand;
+
+nameCommand
+	-annotation "toggles viewport lighting"
+	-sourceType "mel"
+	-command ("toggleLights_zooHotkeyPrs")
+	toggleLightsPrs;
+
+nameCommand
+	-annotation "IKHandleToolNameCommand"
+	-sourceType "mel"
+	-command ("IKHandleTool")
+	IKHandleToolNameCommand;
+
+nameCommand
+	-annotation "lineNameCommand"
+	-sourceType "mel"
+	-command ("line")
+	lineNameCommand;
+
+nameCommand
+	-annotation "Select Circle Tool"
+	-sourceType "mel"
+	-command ("select -r nurbsSphere1 ;")
+	circleToolNamedCommand;
+
+nameCommand
+	-annotation "showLRANameCommand"
+	-sourceType "mel"
+	-command ("showLRA")
+	showLRANameCommand;
+
+nameCommand
+	-annotation "shelftoggleNameCommand"
+	-sourceType "mel"
+	-command ("shelftoggle")
+	shelftoggleNameCommand;
+
+nameCommand
+	-annotation "SkinnyNameCommand"
+	-sourceType "mel"
+	-command ("Skinny")
+	SkinnyNameCommand;
+
+nameCommand
+	-annotation "ToggleLightNameCommand"
+	-sourceType "mel"
+	-command ("ToggleLight")
+	ToggleLightNameCommand;
+
+nameCommand
+	-annotation "nubsSuraseNameCommand"
+	-sourceType "mel"
+	-command ("nubsSurase")
+	nubsSuraseNameCommand;
+
+nameCommand
+	-annotation "SetDrivenKeyOptioNameCommand"
+	-sourceType "mel"
+	-command ("SetDrivenKeyOptio")
+	SetDrivenKeyOptioNameCommand;
+
+nameCommand
+	-annotation "AddInfluencNameCommand"
+	-sourceType "mel"
+	-command ("AddInfluenc")
+	AddInfluencNameCommand;
+
+nameCommand
+	-annotation "lighttoggNameCommand"
+	-sourceType "mel"
+	-command ("lighttogg")
+	lighttoggNameCommand;
+
+nameCommand
+	-annotation "toggle kims palette"
+	-sourceType "mel"
+	-command ("toggle_KSP; pSaveValue_KSP; print \"윈도우 위치 리셋은 KSP 0\";")
+	toggleKSPCommand;
+
+nameCommand
+	-annotation "Collect External Scripts"
+	-sourceType "mel"
+	-command ("toggle_CES; ")
+	collectExScriptCommand;
+
+nameCommand
+	-annotation "toggle all bars"
+	-sourceType "mel"
+	-command ("pToggleBars;")
+	toggleAllbarCommand;
+
+nameCommand
+	-annotation "toggle InView"
+	-sourceType "mel"
+	-command ("pToggleInView;")
+	toggleInviewCommand;
+
+nameCommand
+	-annotation "Attribute Dragger Context Press"
+	-sourceType "mel"
+	-command ("source js_attrDraggerSingle;js_attrDraggerSingle;")
+	js_attrDraggerPress;
+
+nameCommand
+	-annotation "Attribute Dragger Context Release"
+	-sourceType "mel"
+	-command ("MarkingMenuPopDown")
+	js_attrDraggerRelease;
+
+nameCommand
+	-annotation "change In Press"
+	-sourceType "mel"
+	-command ("changeInViewPop")
+	changeInPress;
+
+nameCommand
+	-annotation "change In Release"
+	-sourceType "mel"
+	-command ("changeInViewPopDel")
+	changeInRelease;
+
+nameCommand
+	-annotation "fileHandling In Press"
+	-sourceType "mel"
+	-command ("fileHandlingPop")
+	fileHandlingPress;
+
+nameCommand
+	-annotation "fileHandling In Release"
+	-sourceType "mel"
+	-command ("fileHandlingPopDel")
+	fileHandlingRelease;
+
+nameCommand
+	-annotation "etc In Press"
+	-sourceType "mel"
+	-command ("DisplayShaded; etcPop;")
+	etcPress;
+
+nameCommand
+	-annotation "etc In Release"
+	-sourceType "mel"
+	-command ("etcPopDel")
+	etcRelease;
+
+nameCommand
+	-annotation "ksScriptEditor_hotkeyNameCommand"
+	-sourceType "mel"
+	-command ("Connect_Decomp_Matrix_To_Transform")
+	ksScriptEditor_hotkeyNameCommand;
+
+nameCommand
+	-annotation "toggle Status Line"
+	-sourceType "mel"
+	-command ("toggleUIComponentVisibility \"Status Line\"; updatePrefsMenu;")
+	toggleStatusLine;
+
+nameCommand
+	-annotation "toggle pyKimstools"
+	-sourceType "mel"
+	-command ("python(\"toggle_pyKimstools()\")")
+	togglePyKimstoolsNameCommand;
+
+nameCommand
+	-annotation "channel Pop Press"
+	-sourceType "mel"
+	-command ("channelPop")
+	channelPopPress;
+
+nameCommand
+	-annotation "channel Pop Release"
+	-sourceType "mel"
+	-command ("channelPopDel")
+	channelPopDelRelease;
+
+nameCommand
+	-annotation "NodeEditorWindowNameCommand"
+	-sourceType "mel"
+	-command ("NodeEditorWindow")
+	NodeEditorWindowNameCommand;
+
+nameCommand
+	-annotation "help_MelNameCommand"
+	-sourceType "mel"
+	-command ("help_Py")
+	help_MelNameCommand;
+
+nameCommand
+	-annotation "help_PythonNameCommand"
+	-sourceType "mel"
+	-command ("help_Mel")
+	help_PythonNameCommand;
+
+nameCommand
+	-annotation "help_NodeNameCommand"
+	-sourceType "mel"
+	-command ("help_Node")
+	help_NodeNameCommand;
+
+nameCommand
+	-annotation "iso_selectNameCommand"
+	-sourceType "mel"
+	-command ("iso_select")
+	iso_selectNameCommand;
+
+nameCommand
+	-annotation "addNodeInNodeEditorNameCommand"
+	-sourceType "mel"
+	-command ("addNodeInNodeEditor")
+	addNodeInNodeEditorNameCommand;
+
+nameCommand
+	-annotation "showJointNameCommand"
+	-sourceType "mel"
+	-command ("showJoint")
+	showJointNameCommand;
+
+nameCommand
+	-annotation "softToggleNameCommand"
+	-sourceType "mel"
+	-command ("softToggle")
+	softToggleNameCommand;
+
+nameCommand
+	-annotation "toggle soul palette"
+	-sourceType "mel"
+	-command ("Toggle_SoulPalette_NKT;")
+	toggleSoulPaletteCommand;
+
+nameCommand
+	-annotation "singleOutlinerAndCleanNameCommand"
+	-sourceType "mel"
+	-command ("singleOutlinerAndClean")
+	singleOutlinerAndCleanNameCommand;
+
+nameCommand
+	-annotation "mesh_toggleNameCommand"
+	-sourceType "mel"
+	-command ("mesh_toggle")
+	mesh_toggleNameCommand;
+
+nameCommand
+	-annotation "Connect_Decomp_Matrix_To_TransformNameCommand"
+	-sourceType "mel"
+	-command ("Connect_Decomp_Matrix_To_Transform")
+	Connect_Decomp_Matrix_To_TransformNameCommand;
+
+nameCommand
+	-annotation "GameExporterNameCommand"
+	-sourceType "mel"
+	-command ("GameExporter")
+	GameExporterNameCommand;
+
+nameCommand
+	-annotation "create_DecompMatrixNameCommand"
+	-sourceType "mel"
+	-command ("create_DecompMatrix")
+	create_DecompMatrixNameCommand;
+
+nameCommand
+	-annotation "create_multiMatrixNameCommand"
+	-sourceType "mel"
+	-command ("create_multiMatrix")
+	create_multiMatrixNameCommand;
+
+nameCommand
+	-annotation "joint_mirrorNameCommand"
+	-sourceType "mel"
+	-command ("joint_mirror")
+	joint_mirrorNameCommand;
+
+nameCommand
+	-annotation "mirror_nameNameCommand"
+	-sourceType "mel"
+	-command ("mirror_name")
+	mirror_nameNameCommand;
+
+nameCommand
+	-annotation "toi_grpNameCommand"
+	-sourceType "mel"
+	-command ("toi_grp")
+	toi_grpNameCommand;
+
+nameCommand
+	-annotation "grouping_renameNameCommand"
+	-sourceType "mel"
+	-command ("grouping_rename")
+	grouping_renameNameCommand;
+
+nameCommand
+	-annotation "group_with_child_nameNameCommand"
+	-sourceType "mel"
+	-command ("group_with_child_name")
+	group_with_child_nameNameCommand;
+
+nameCommand
+	-annotation "ThunderCloud_GMH2_Hotkey"
+	-sourceType "mel"
+	-command ("source \"ThunderCloud/GMH2_6/GMH2_starter.mel\";")
+	ThunderCloud_GMH_command;
+
+nameCommand
+	-annotation "symmetry_xNameCommand"
+	-sourceType "mel"
+	-command ("symmetry_x")
+	symmetry_xNameCommand;
+
+nameCommand
+	-annotation "toggle_texNameCommand"
+	-sourceType "mel"
+	-command ("toggle_tex")
+	toggle_texNameCommand;
+

@@ -1,0 +1,12 @@
+
+
+// ~~ Notice ~~
+// Even if userSetup.mel in maya script folder exists,
+// read userSetup.mel in version script folder.
+// If userSetup.mel in version script folder, 
+// maya will read userSetup.mel in maya script folder
+
+
+// It's a personal userSetup file.
+string $path_ = "C:/k/etc/maya_prefs/k_userSetup.py";
+python("with open(\""+$path_+"\", 'rb') as f: exec(f.read()) ");

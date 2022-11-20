@@ -1,0 +1,111 @@
+//Maya Preference 2022 (Release 1)
+//
+//
+
+//
+// The hotkey set
+//
+hotkeySet -source "Maya_Default" -current User;
+//
+// The hotkey contexts and hotkeys
+//
+hotkey -keyShortcut "7" -alt -name ("Connect_Decomp_Matrix_To_TransformNameCommand");
+hotkey -keyShortcut "1" -ctl -name ("iso_selectNameCommand");
+hotkey -keyShortcut "v" -alt -name ("");
+hotkey -keyShortcut "$" -alt -name ("");
+hotkey -keyShortcut ";" -alt -name ("");
+hotkey -keyShortcut "k" -alt -releaseName ("");
+hotkey -keyShortcut "p" -ctl -alt -name ("");
+hotkey -keyShortcut "k" -alt -pressCommandRepeat true
+	-name ("togglePyKimstoolsNameCommand");
+hotkey -keyShortcut "'" -alt -name ("");
+hotkey -keyShortcut "e" -alt -name ("");
+hotkey -keyShortcut "`" -alt -name ("");
+hotkey -keyShortcut "0" -releaseName ("channelPopDelRelease");
+hotkey -keyShortcut "0" -pressCommandRepeat true
+	-name ("channelPopPress");
+hotkey -keyShortcut "8" -alt -name ("help_MelNameCommand");
+hotkey -keyShortcut "j" -ctl -name ("JointToolNameCommand");
+hotkey -keyShortcut "q" -ctl -name ("create_DecompMatrixNameCommand");
+hotkey -keyShortcut "m" -alt -name ("joint_mirrorNameCommand");
+hotkey -keyShortcut "7" -releaseName ("");
+hotkey -keyShortcut "7" -name ("mesh_toggleNameCommand");
+hotkey -keyShortcut "5" -ctl -name ("singleOutlinerAndCleanNameCommand");
+hotkey -keyShortcut "s" -alt -name ("");
+hotkey -keyShortcut "4" -alt -name ("ComponentEditorNameCommand");
+hotkey -keyShortcut "t" -ctl -name ("");
+hotkey -keyShortcut "4" -ctl -name ("HypershadeWindowNameCommand");
+hotkey -keyShortcut "0" -alt -name ("help_NodeNameCommand");
+hotkey -keyShortcut "!" -ctl -name ("ThunderCloud_GMH_command");
+hotkey -keyShortcut "8" -name ("xrayNameCommand");
+hotkey -keyShortcut "q" -alt -releaseName ("");
+hotkey -keyShortcut "q" -alt -name ("GameExporterNameCommand");
+hotkey -keyShortcut "a" -name ("");
+hotkey -keyShortcut "a" -releaseName ("");
+hotkey -keyShortcut "2" -ctl -name ("ConnectionEditorNameCommand");
+hotkey -keyShortcut "Right" -ctl -alt -name ("mlTruckRightTool");
+hotkey -keyShortcut "d" -alt -name ("PlaybackToggleNameCommand");
+hotkey -keyShortcut "7" -ctl -name ("ExpressionEditorNameCommand");
+hotkey -keyShortcut "o" -releaseName ("");
+hotkey -keyShortcut "9" -name ("nubscurveNameCommand");
+hotkey -keyShortcut "i" -releaseName ("");
+hotkey -keyShortcut "9" -alt -name ("help_PythonNameCommand");
+hotkey -keyShortcut "o" -name ("symmetry_xNameCommand");
+hotkey -keyShortcut "i" -pressCommandRepeat true
+	-name ("toggleAllbarCommand");
+hotkey -keyShortcut "h" -ctl -alt -name ("HotkeyPreferencesWindowNameCommand");
+hotkey -keyShortcut "Down" -ctl -alt -name ("mlTruckDownTool");
+hotkey -keyShortcut "r" -ctl -name ("group_with_child_nameNameCommand");
+hotkey -keyShortcut "w" -ctl -name ("create_multiMatrixNameCommand");
+hotkey -keyShortcut "5" -releaseName ("etcRelease");
+hotkey -keyShortcut "5" -pressCommandRepeat true
+	-name ("etcPress");
+hotkey -keyShortcut "5" -alt -name ("NodeEditorWindowNameCommand");
+hotkey -keyShortcut "Space" -name ("NameComPop_hotBox");
+hotkey -keyShortcut "8" -ctl -alt -name ("");
+hotkey -keyShortcut "o" -alt -pressCommandRepeat true
+	-name ("toggleSoulPaletteCommand");
+hotkey -keyShortcut "u" -alt -pressCommandRepeat true
+	-name ("collectExScriptCommand");
+hotkey -keyShortcut "3" -alt -name ("SetDrivenKeyOptioNameCommand");
+hotkey -keyShortcut "k" -ctl -name ("IKHandleToolNameCommand");
+hotkey -keyShortcut "3" -ctl -name ("HypergraphWindowNameCommand");
+hotkey -keyShortcut "Left" -ctl -alt -name ("mlTruckLeftTool");
+hotkey -keyShortcut "Up" -ctl -alt -name ("mlTruckUpTool");
+hotkey -keyShortcut "g" -alt -name ("toi_grpNameCommand");
+hotkey -keyShortcut "i" -alt -pressCommandRepeat true
+	-name ("toggleKSPCommand");
+hotkey -keyShortcut "l" -alt -name ("showLRANameCommand");
+hotkey -keyShortcut "`" -name ("softToggleNameCommand");
+hotkey -keyShortcut "`" -releaseName ("");
+hotkey -keyShortcut "j" -alt -name ("showJointNameCommand");
+hotkey -keyShortcut "r" -alt -name ("mirror_nameNameCommand");
+hotkey -keyShortcut "6" -name ("toggle_texNameCommand");
+hotkey -keyShortcut "6" -alt -name ("SkinnyNameCommand");
+hotkey -keyShortcut "3" -ctl -alt -name ("");
+hotkey -keyShortcut "g" -alt -sht -name ("grouping_renameNameCommand");
+hotkey -keyShortcut "c" -name ("js_attrDraggerPress");
+hotkey -keyShortcut "y" -ctl -name ("addNodeInNodeEditorNameCommand");
+hotkey -keyShortcut "c" -releaseName ("js_attrDraggerRelease");
+hotkey -keyShortcut "6" -ctl -name ("GraphEditorNameCommand");
+hotkey -keyShortcut "w" -alt -name ("AddInfluencNameCommand");
+hotkey -keyShortcut "1" -alt -name ("SmoothBindSkinOptionsNameCommand");
+hotkey -keyShortcut "2" -alt -name ("ChannelControlEditorNameCommand");
+hotkeyCtx -type "Editor" -addClient "graphEditor";
+hotkeyCtx -type "Editor" -addClient "hyperGraphPanel";
+hotkeyCtx -type "Editor" -addClient "polyTexturePlacementPanel";
+hotkey -keyShortcut "7" -name ("") -ctxClient "polyTexturePlacementPanel";
+hotkeyCtx -type "Editor" -addClient "nodeEditorPanel";
+hotkeyCtx -type "Editor" -addClient "outlinerPanel";
+hotkeyCtx -type "Editor" -addClient "hyperShadePanel";
+hotkeyCtx -type "Editor" -addClient "posePanel";
+hotkeyCtx -type "Editor" -addClient "shapePanel";
+hotkeyCtx -type "Editor" -addClient "profilerPanel";
+hotkeyCtx -type "Editor" -addClient "timeEditorPanel";
+hotkeyCtx -type "Tool" -addClient "Unfold3DBrush";
+hotkeyCtx -type "Tool" -addClient "SymmetrizeUVBrush";
+hotkeyCtx -type "Tool" -addClient "polyCutUV";
+hotkeyCtx -type "Tool" -addClient "texCutContext";
+hotkeyCtx -type "Tool" -addClient "sculptMeshCache";
+hotkeyCtx -type "Tool" -addClient "texSculptCacheContext";
+hotkeyCtx -type "Tool" -addClient "xgmIGBrush";

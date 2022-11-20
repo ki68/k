@@ -1,0 +1,17 @@
+# ------ module name, icon name, comment ---------
+
+#Model 
+
+#Ani 
+
+#Rig
+kDock,,Left dock window for work
+rivetTool,,rivet extension version
+
+#Mocap
+
+#Simulation
+
+#Common
+del_chinese_virus,,delete chinese virus
+set_maya_window_color,,set maya window color
